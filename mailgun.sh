@@ -31,7 +31,7 @@ while IFS='' read -r line || [[ -n "$line" ]]; do
     command+="      -F action='forward(\"$email\")'"
   done
 
-  echo $command
-  # eval $command
+  # echo $command
+  eval $command
 
 done < "$2"
